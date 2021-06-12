@@ -1,9 +1,11 @@
-package net.codejava;
+package net.codejava.controller;
 
 import java.util.List;
 
+import net.codejava.model.User;
 import net.codejava.model.CovidDetails;
 import net.codejava.model.Response;
+import net.codejava.service.CovidDashboardService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
@@ -16,7 +18,7 @@ import org.springframework.web.client.RestTemplate;
 public class AppController {
 
 	@Autowired
-	private UserRepository userRepo;
+	CovidDashboardService service;
 
 	@Autowired
 	private RestTemplate restTemplate;
@@ -33,13 +35,13 @@ public class AppController {
 		return "signup_form";
 	}
 	
-	@PostMapping("/process_register")
+	@PostMapping("/register_user")
 	public String processRegister(User user) {
 		BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 		String encodedPassword = passwordEncoder.encode(user.getPassword());
 		user.setPassword(encodedPassword);
 		
-		userRepo.save(user);
+		service.saveUser(user);
 		
 		return "register_success";
 	}
@@ -51,6 +53,9 @@ public class AppController {
 			Response.class);
 
 		List<CovidDetails> covidDetails = response.getData().getRows();
+
+		int pageSize = 10;
+		int pageNumbers = covidDetails.size() / pageSize;
 		model.addAttribute("covidDetails", covidDetails);
 		return "coviddashboard";
 	}
