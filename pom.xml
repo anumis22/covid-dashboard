@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>net.codejava</groupId>
-	<artifactId>SpringBootRegistrationLogin</artifactId>
+	<artifactId>CovidDashboard</artifactId>
 	<version>1.0</version>
-	<name>SpringBootRegistrationLogin</name>
-	<description>Demo registration (sign up) and Login (Sign in)</description>
+	<name>CovidDashboard</name>
+	<description>Covid Dashboard</description>
 
 	<properties>
 		<java.version>8</java.version>
