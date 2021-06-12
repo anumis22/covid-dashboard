@@ -1,4 +1,4 @@
-package net.codejava;
+package covid.dashboard;
 
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;

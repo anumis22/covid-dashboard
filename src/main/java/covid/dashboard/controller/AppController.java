@@ -1,11 +1,11 @@
-package net.codejava.controller;
+package covid.dashboard.controller;
 
 import java.util.List;
 
-import net.codejava.model.User;
-import net.codejava.model.CovidDetails;
-import net.codejava.model.Response;
-import net.codejava.service.CovidDashboardService;
+import covid.dashboard.model.CovidDetails;
+import covid.dashboard.model.Response;
+import covid.dashboard.model.User;
+import covid.dashboard.service.CovidDashboardService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
@@ -17,8 +17,7 @@ import org.springframework.web.client.RestTemplate;
 @Controller
 public class AppController {
 
-	@Autowired
-	CovidDashboardService service;
+	@Autowired CovidDashboardService service;
 
 	@Autowired
 	private RestTemplate restTemplate;

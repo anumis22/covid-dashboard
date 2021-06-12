@@ -1,4 +1,4 @@
-package net.codejava;
+package covid.dashboard;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 

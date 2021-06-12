@@ -1,4 +1,4 @@
-package net.codejava.model;
+package covid.dashboard.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

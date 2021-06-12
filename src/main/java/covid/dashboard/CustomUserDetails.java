@@ -1,8 +1,8 @@
-package net.codejava;
+package covid.dashboard;
 
 import java.util.Collection;
 
-import net.codejava.model.User;
+import covid.dashboard.model.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 

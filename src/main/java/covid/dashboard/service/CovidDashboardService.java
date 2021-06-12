@@ -1,6 +1,6 @@
-package net.codejava.service;
+package covid.dashboard.service;
 
-import net.codejava.model.User;
+import covid.dashboard.model.User;
 
 public interface CovidDashboardService {
     User saveUser(User user);

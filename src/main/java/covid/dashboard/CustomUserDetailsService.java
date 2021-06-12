@@ -1,7 +1,7 @@
-package net.codejava;
+package covid.dashboard;
 
-import net.codejava.model.User;
-import net.codejava.repository.UserRepository;
+import covid.dashboard.model.User;
+import covid.dashboard.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

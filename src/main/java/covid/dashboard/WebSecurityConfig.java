@@ -1,4 +1,4 @@
-package net.codejava;
+package covid.dashboard;
 
 import javax.sql.DataSource;
 

@@ -1,4 +1,4 @@
-package net.codejava.model;
+package covid.dashboard.model;
 
 public class CovidDetails {
     private String country;

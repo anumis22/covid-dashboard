@@ -1,7 +1,7 @@
-package net.codejava.service;
+package covid.dashboard.service;
 
-import net.codejava.model.User;
-import net.codejava.repository.UserRepository;
+import covid.dashboard.model.User;
+import covid.dashboard.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

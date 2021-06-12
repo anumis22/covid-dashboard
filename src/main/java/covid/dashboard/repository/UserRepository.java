@@ -1,6 +1,6 @@
-package net.codejava.repository;
+package covid.dashboard.repository;
 
-import net.codejava.model.User;
+import covid.dashboard.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

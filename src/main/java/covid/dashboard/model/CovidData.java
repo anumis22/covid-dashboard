@@ -1,4 +1,4 @@
-package net.codejava.model;
+package covid.dashboard.model;
 
 import java.util.ArrayList;
 import java.util.List;
