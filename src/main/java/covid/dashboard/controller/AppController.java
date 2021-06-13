@@ -53,8 +53,6 @@ public class AppController {
 
 		List<CovidDetails> covidDetails = response.getData().getRows();
 
-		int pageSize = 10;
-		int pageNumbers = covidDetails.size() / pageSize;
 		model.addAttribute("covidDetails", covidDetails);
 		return "coviddashboard";
 	}
